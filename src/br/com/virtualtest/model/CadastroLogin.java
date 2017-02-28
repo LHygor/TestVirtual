@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CadastroLogin extends Usuario{
      public int Contador;
-     public String Resposta;
+     public String Prova;
     
     public static void main(String[] arqs){
         Scanner ler = new Scanner(System.in);
@@ -16,48 +16,60 @@ public class CadastroLogin extends Usuario{
         
         System.out.println("Pergunta 1-  ");
         System.out.println("a)  b)  c)  d) ");
-        String Resposta = ler.next();
-        if (Resposta == ){
+        String Prova = ler.next();
+        if (Prova == ){
             System.out.println("RESPOSTA CERTA!");
             Contador++;
-            Resposta = null;
+            Prova = null;
         }else System.out.println("RESPOSTA ERRADA!");
         
         System.out.println("Pergunta 2-  ");
         System.out.println("a)  b)  c)  d) ");
-        String Resposta = ler.next();
-        if (Resposta == ){
+        String Prova = ler.next();
+        if (Prova == ){
             System.out.println("RESPOSTA CERTA!");
             Contador++;
-            Resposta = null;
+            Prova = null;
         }else System.out.println("RESPOSTA ERRADA!");
         
         System.out.println("Pergunta 3-  ");
         System.out.println("a)  b)  c)  d) ");
-        String Resposta = ler.next();
-        if (Resposta == ){
+        String Prova = ler.next();
+        if (Prova == ){
             System.out.println("RESPOSTA CERTA!");
             Contador++;
-            Resposta = null;
+            Prova = null;
         }else System.out.println("RESPOSTA ERRADA!");
         
         System.out.println("Pergunta 4-  ");
         System.out.println("a)  b)  c)  d) ");
-        String Resposta = ler.next();
-        if (Resposta == ){
+        String Prova = ler.next();
+        if (Prova == ){
             System.out.println("RESPOSTA CERTA!");
             Contador++;
-            Resposta = null;
+            Prova = null;
         }else System.out.println("RESPOSTA ERRADA!");
         
         System.out.println("Pergunta 5-  ");
         System.out.println("a)  b)  c)  d) ");
-        String Resposta = ler.next();
-        if (Resposta == ){
+        String Prova = ler.next();
+        if (Prova == ){
             System.out.println("RESPOSTA CERTA!");
             Contador++;
-            Resposta = null;
-        }else System.out.println("RESPOSTA ERRADA!");
-    
+            Prova = null;
+        }else System.out.println("RESPOSTA ERRADA!");    
+        
+        if (Contador <= 6){
+            System.out.println("Sua Classificação e': ALUNO");
+            return typeUser = A;
+        } 
+        if ((Contador > 6)&&(Contador <= 8)){
+            System.out.println("Sua Classificação e': MONITOR");
+            return typeUser = M;
+        } 
+        if ((Contador > 8)&&(Contador <= 10)){
+            System.out.println("Sua Classificação e': PROFESSOR");
+            return typeUser = P;
+        }
     }
 }
